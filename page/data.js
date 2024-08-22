@@ -6,10 +6,16 @@ const data = {
   browsers: ["chrome", "MicrosoftEdge", "firefox"],
   // browsers: ["chrome"],
   url: "https://panjiachen.github.io/vue-element-admin",
-  user: {
-    username: "admin" + " ",
-    password: "11111111",
-  },
+  users: [
+    {
+      username: "admin" + " ",
+      password: "11111111",
+    },
+    {
+      username: "editor" + " ",
+      password: "11111111",
+    },
+  ],
   input: {
     username: By.name("username"),
     password: By.name("password"),
