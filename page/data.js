@@ -1,10 +1,15 @@
 const { By } = require("selenium-webdriver");
 
-// "chrome", "MicrosoftEdge", "firefox"
+let browserNumber, browsers;
+browserNumber = 1;
+if (browserNumber == 1) {
+  browsers = ["chrome"];
+} else {
+  browsers = ["chrome", "MicrosoftEdge", "firefox"];
+}
 
 const data = {
-  browsers: ["chrome", "MicrosoftEdge", "firefox"],
-  // browsers: ["chrome"],
+  browsers: browsers,
   url: "https://panjiachen.github.io/vue-element-admin",
   users: [
     {
